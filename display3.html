@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-59380890-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+<body>
+<h1><a href="http://openenergymonitor.org/">OpenEnergyMonitor</a> project</h1>
+<p>Link to shared data: <a href="http://emoncms.org/daturach">realtime power for a three phases system</a></p>
+<h2>Channel Status Updates</h2>
+<iframe class="statusIFrame" width="400" height="200" frameborder="1" src="http://api.thingspeak.com/channels/45572/status/recent"></iframe>
+
+<h2>Visualization based on Matlab</h2>
+<iframe width="600" height="500" style="border: 1px solid #cccccc;" src="http://api.thingspeak.com/apps/matlab_visualizations/20199" ></iframe>
+
+<p>Realtime Power on Phase 3:</p>
+<iframe style="width:580px; height:400px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://emoncms.org/vis/realtime?feedid=81053&embed=1"></iframe>
+
+<p>Realtime Gas pulses:</p>
+<iframe style="width:580px; height:400px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://emoncms.org/vis/realtime?feedid=131174&embed=1"></iframe>
+
+<p>Realtime Total Power 3 phases:</p>
+<iframe width="580" height="400" style="border: 1px solid #cccccc;" src="http://api.thingspeak.com/channels/45572/charts/1?width=580&height=400&results=240&dynamic=true&type=line&yaxis=Watt&title=Total%20Power%20(3%20phases)" ></iframe>
+<iframe width="780" height="400" style="border: 1px solid #cccccc;" src="http://api.thingspeak.com/plugins/3179" ></iframe>
+
+</body>
+</html>
